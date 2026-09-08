@@ -1,0 +1,45 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class door1 : MonoBehaviour
+{
+    Transform tf;
+    private bool isOpen = false;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        tf = gameObject.GetComponent<Transform>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
+
+    public void OpenDoorMethod()
+    {
+        tf.Rotate(Vector3.up, -80);
+        Debug.Log("close");
+        isOpen = !isOpen;
+
+    }
+    public void CloseDoorMethod()
+    {
+        tf.Rotate(Vector3.up, 80);
+        Debug.Log("open");
+        isOpen = !isOpen;
+    }
+
+    public bool GetIsOpen()
+    {
+        return isOpen;
+    }
+    public void SetIsOpen(bool b)
+    {
+        isOpen = b;
+    }
+
+
+}
