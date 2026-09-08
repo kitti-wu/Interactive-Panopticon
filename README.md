@@ -1,3 +1,71 @@
+# Interactive Panopticon
+
+A Unity-based interactive virtual-reality experience inspired by Bentham's Panopticon concept. This repository contains the project documentation and a curated extract of the custom C# source code.
+
+## Code Structure
+
+~~~text
+UnityProject/
+└── Assets/
+    ├── Scripts/             # General interaction scripts
+    │   ├── door.cs          # Door interaction
+    │   ├── doortrigger1.cs  # Door trigger logic
+    │   ├── lightControl.cs  # Lighting controls
+    │   ├── UElevator.cs     # Elevator interaction bridge
+    │   ├── Buttons.cs       # UI button handling
+    │   ├── Human.cs         # Character behavior
+    │   └── ...              # Other custom interaction and UI scripts
+    └── Elevator/            # Elevator and floor-control scripts
+        ├── Elevator.cs
+        ├── Elevator1.cs
+        ├── ElevatorRoom.cs
+        ├── ElevatorRoom1.cs
+        ├── ElevatorPort.cs
+        └── ElevatorPort1.cs
+~~~
+
+### Source Scope
+
+- UnityProject/Assets/Scripts contains 17 custom C# scripts for doors, lighting, character interaction, UI, and scene behavior.
+- UnityProject/Assets/Elevator contains 6 C# scripts for elevator movement, doors, rooms, and floor ports.
+- The original Unity project is about 4.4 GB. Large models, textures, third-party plugins, and Unity cache files are intentionally excluded; this repository publishes the authored source code and project documentation.
+
+---
+
+# 中文说明
+
+这是一个基于 Unity 开发的交互式虚拟现实项目，以边沁的全景敞视监狱概念为灵感。本仓库包含项目说明文档，以及整理后的自定义 C# 源码。
+
+## 代码结构
+
+~~~text
+UnityProject/
+└── Assets/
+    ├── Scripts/             # 通用交互脚本
+    │   ├── door.cs          # 门的交互逻辑
+    │   ├── doortrigger1.cs  # 门的触发逻辑
+    │   ├── lightControl.cs  # 灯光控制
+    │   ├── UElevator.cs     # 电梯交互衔接
+    │   ├── Buttons.cs       # UI 按钮处理
+    │   ├── Human.cs         # 角色行为
+    │   └── ...              # 其他交互与界面脚本
+    └── Elevator/            # 电梯与楼层控制脚本
+        ├── Elevator.cs
+        ├── Elevator1.cs
+        ├── ElevatorRoom.cs
+        ├── ElevatorRoom1.cs
+        ├── ElevatorPort.cs
+        └── ElevatorPort1.cs
+~~~
+
+### 源码范围
+
+- UnityProject/Assets/Scripts 包含 17 个自定义 C# 脚本，覆盖门、灯光、角色交互、UI 与场景行为。
+- UnityProject/Assets/Elevator 包含 6 个 C# 脚本，处理电梯移动、门、房间与楼层端口。
+- 原始 Unity 工程约 4.4 GB。大型模型、贴图、第三方插件和 Unity 缓存未上传；仓库公开的是项目自身源码与文档。
+
+---
+
 # Interactive-Panopticon
 本游戏基于英国哲学家边沁提出的“全景监狱/圆形监狱”概念，使用Blender和C4D进行建模，Unity完成交互功能落地。实验过程如下：
 # 一 实验要求
